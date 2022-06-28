@@ -1,0 +1,65 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: sans-serif;
+	background-color: #333;
+	color: #fff;
+}
+
+.body {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 100px;
+	margin: 0 auto;
+	height: 200px;
+	width: 110px;
+	color: #333;
+	background-color: #fff;
+	border-radius: 5px;
+	&_screen {
+		display: flex;
+		justify-content: end;
+		margin: 10px 0;
+		// margin-right: 8px;
+	}
+	&_keyboard {
+		display: flex;
+		justify-content: space-around;
+		font-size: 10px;
+        .colorBtns {
+            font-weight: bold;
+            .division {
+                background-color: rgb(46, 128, 117);
+
+            }
+            .plus {
+                background-color: rgb(39, 74, 230);
+            }
+            .minus {
+                background-color: rgb(245, 0, 82);
+                font-weight: bold;
+            }
+            .multiplication {
+                background-color: rgb(241, 147, 38);
+            }
+            .equal {
+                background-color: rgb(252, 0, 197);
+            }
+        }
+		&_circle {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 20px;
+			height: 20px;
+			margin-top: 5px;
+			border: 1px solid red;
+			border-radius: 50%;
+		}
+	}
+}
